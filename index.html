@@ -37,8 +37,18 @@
       <section>
         <h2>Dog Form</h2>
         <form action="https://yandex.ru/images/search?from=tabbar&text=dog%20photos">
-        <label><input type="radio">Indoor</label>
-        <input type="text" name="catphotourl" placeholder="dog photo URL" required>
+      <fieldset>
+        <legend>Is your dog indoor our outdoor dog?</legend>
+        <label><input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor</label>
+        <label><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor</label>
+      </fieldset>
+      <fieldset>
+        <legend>What's your dog's personality?</legend>
+        <input type="checkbox" id="loving" name="personality"><label for="loving"> Loving</label>
+        <input type="checkbox" id="lazy" name="personality"><label for="lazy"> Lazy</label>
+        <input type="checkbox" id="energetic" name="personality"><label for="energetic"> Energetic</label>
+      </fieldset>
+        <input type="text" name="dogphotourl" placeholder="dog photo URL" required>
         <button type="submit">Submit</button>
         </form>
       </section>
